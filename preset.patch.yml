@@ -25,7 +25,6 @@
           - id: persona
             name: '@deepseek-ai/dsh-persona'
             config:
-              suffix: Your working directory is {{cwd}}.
               prefix: |-
                 You are an AIUI application developer powered by the {{model}} model, running on the DeepSeek Harness.
 

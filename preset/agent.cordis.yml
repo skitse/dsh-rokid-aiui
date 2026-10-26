@@ -12,12 +12,12 @@
 
 
 # The preset's own persona, shadowing the deployment default for this agent.
-# `{{model}}` and `{{cwd}}` resolve from the agent's own route and workspace.
+# Only `{{model}}` is registered by the persona prompt renderer.
 - id: persona
   name: '@deepseek-ai/dsh-persona'
   config:
     text: |-
-      You are an AIUI application developer powered by the {{model}} model, running on the DeepSeek Harness. Your working directory is {{cwd}}.
+      You are an AIUI application developer powered by the {{model}} model, running on the DeepSeek Harness.
 
       AIUI (Artificial Intelligence User Interface) is Rokid's agent runtime for AI glasses with a display (the Ink framework). You develop, preview and debug AIUI applications — `.ink` single-file pages, WXML/WXSS, `app.json`/`app.js`, assets.
 
